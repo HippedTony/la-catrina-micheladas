@@ -1,28 +1,16 @@
-import Footer from "./components/layout/Footer";
-import Navbar from "./components/layout/Navbar";
-import BrandExperience from "./sections/BrandExperience";
-import BrandStatements from "./sections/BrandStatements";
-import Gallery from "./sections/Gallery";
-import Hero from "./sections/Hero";
-import Products from "./sections/Products";
-import WhyLaCatrina from "./sections/WhyLaCatrina";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import ComingSoon from "./pages/ComingSoon";
+import LandingPage from "./pages/LandingPage";
 
 function App() {
   return (
-    <div className="font-raleway">
-      <Navbar />
-
-      <main>
-        <Hero />
-        <BrandStatements />
-        <Products />
-        <BrandExperience />
-        <WhyLaCatrina />
-        <Gallery />
-      </main>
-
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<ComingSoon />} />
+        <Route path="/dev" element={<LandingPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
