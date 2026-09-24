@@ -8,8 +8,33 @@ export const products: Product[] = [
     size: "32 oz",
     description:
       "Vaso escarchado con nuestra mezcla de chile en polvo, listo para preparar micheladas al instante.",
-    image: "/images/products/michelada-original.png",
-    flavors: ["Mango", "Original", "Chamoy", "Sandía", "Pepino"],
+    flavors: [
+      {
+        name: "Original",
+        image: "/images/products/catrina_michelada_original.png",
+        color: "#251216"
+      },
+      {
+        name: "Chamoy",
+        image: "/images/products/catrina_michelada_chamoy.png",
+        color: "#C10001",
+      },
+      {
+        name: "Mango",
+        image: "/images/products/catrina_michelada_mango.png",
+        color: "#B17201",
+      },
+      {
+        name: "Sandía",
+        image: "/images/products/catrina_michelada_sandia.png",
+        color: "#1C401A",
+      },
+      {
+        name: "Pepino",
+        image: "/images/products/catrina_michelada_pepino.png",
+        color: "#1A631C",
+      },
+    ] 
   },
   {
     id: "palomita-la-catrina",
@@ -18,37 +43,31 @@ export const products: Product[] = [
     size: "24 oz",
     description:
       "Vaso escarchado listo para preparar bebidas tipo Paloma o cócteles sin alcohol.",
-    image: "/images/products/palomazo.png",
-    flavors: ["Limón", "Fresa", "Piña Colada", "Pepino", "Blueberry"],
-    reverse: true,
-  },
-  {
-    id: "rim-dip-la-catrina",
-    name: "Rim Dip La Catrina",
-    category: "Escarchador",
-    size: "284 g",
-    description:
-      "Escarchador artesanal para micheladas, frutas o botanas, elaborado con mezclas únicas de chiles, tamarindo y sabores frutales.",
-    image: "/images/products/rim-dip-chamoy.png",
     flavors: [
-      "Mango",
-      "Chamoy",
-      "Sandía",
-      "Blueberry",
-      "Fresa",
-      "Piña",
-      "Pepino Enchilado",
-    ],
-  },
-  {
-    id: "la-catrinita",
-    name: "La Catrinita",
-    category: "Vaso escarchado",
-    size: "24 oz",
-    description:
-      "Vaso escarchado en la boquilla, acompañado de chile en polvo y una banderilla de tamarindo o sabor frutal.",
-    image: "/images/products/catrinita.webp",
-    flavors: ["Mango", "Chamoy", "Manzana Verde", "Blueberry", "Fresa"],
-    reverse: true,
+      {
+        name: "Limón",
+        image: "/images/products/catrina_palomita_limon.png",
+        color: "#B91C1C"
+      },
+      {
+        name: "Fresa",
+        image: "/images/products/catrina_palomita_fresa.png",
+        color: "#DC2626",
+      },
+      {
+        name: "Piña Colada",
+        image: "/images/products/catrina_palomita_pcolada.png",
+        color: "#F59E0B",
+      },
+      {
+        name: "Pepino",
+        image: "/images/products/catrina_palomita_pepino.png",
+        color: "#E11D48",
+      },
+      {
+        name: "Mora Azul",
+        image: "/images/products/catrina_palomita_pepino.png",
+        color: "#E11D48",
+      },]
   },
 ];
