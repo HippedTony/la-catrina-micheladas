@@ -1,10 +1,14 @@
+export interface ProductFlavor {
+  name: string;
+  image: string;
+  color: string;
+}
+
 export interface Product {
   id: string;
   name: string;
   category: string;
   size: string;
   description: string;
-  image: string;
-  flavors: string[];
-  reverse?: boolean;
+  flavors: ProductFlavor[];
 }

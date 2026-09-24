@@ -119,17 +119,6 @@ export default function Navbar() {
             ))}
           </motion.div>
 
-          {/** Desktop CTA */}
-          <motion.a
-            variants={itemVariants}
-            initial="hidden"
-            animate="visible"
-            href="#productos"
-            className="hidden rounded-full bg-brand px-6 py-3 text-sm font-bold uppercase tracking-wide text-white transition-colors duration-300 hover:bg-accent lg:inline-flex"
-          >
-            Conone nuestros productos
-          </motion.a>
-
           {/** Mobile button */}
           <button
             type="button"
@@ -198,14 +187,6 @@ export default function Navbar() {
                   </motion.a>
                 ))}
 
-                <motion.a
-                  variants={itemVariants}
-                  href="#productos"
-                  onClick={handleLinkClick}
-                  className="inline-flex w-fit rounded-full bg-brand px-6 py-3 text-sm font-bold uppercase tracking-wide text-white"
-                >
-                  Conoce nuestros productos
-                </motion.a>
               </motion.div>
             </motion.div>
           )}

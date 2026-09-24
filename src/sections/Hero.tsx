@@ -91,9 +91,9 @@ export default function Hero() {
             className="relative flex items-center justify-center"
           >
             <motion.img
-              src="/images/products/palomazo.png"
+              src="/catrinas_logo.png"
               alt="Vaso para michelada"
-              animate={{ y: [0, -10, 0] }}
+              animate={{ y: [0, -5, 0] }}
               transition={{
                 duration: 4,
                 repeat: Infinity,

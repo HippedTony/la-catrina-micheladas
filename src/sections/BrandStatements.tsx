@@ -71,7 +71,7 @@ export default function BrandStatements() {
           viewport={{ once: true, amount: 0.3 }}
         >
           <img
-            src="/images/products/palomazo.png"
+            src="/images/products/catrina_michelada_original.png"
             alt="Michelada La Catrina"
             className="max-h-150"
           />
