@@ -5,13 +5,13 @@
   --font-raleway: "Raleway", sans-serif;
 
   /* Brand */
-  --color-brand: #204174;
-  --color-brand-dark: #003f72;
-  --color-accent: #cd7002;
+  --color-brand: #D94F26;
+  --color-brand-dark: #8F2F1B;
+  --color-accent: #F4A62A;
 
   /* Background */
-  --color-background: #ffffff;
-  --color-background-soft: #f5f7fa;
+  --color-background: #FFF7ED;
+  --color-background-soft: #F7EBDD;
 
   /* Text */
   --color-text: #003f72;
