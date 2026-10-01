@@ -42,7 +42,7 @@ export default function ProductCarousel({
             transition={{ duration: 0.5 }}
             className="absolute h-72 w-72 rounded-full blur-3xl"
             style={{
-              backgroundColor: `${activeFlavor.color}80`,
+              backgroundColor: `${activeFlavor.color}95`,
             }}
           />
         </AnimatePresence>

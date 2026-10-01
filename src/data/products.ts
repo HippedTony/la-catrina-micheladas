@@ -17,7 +17,7 @@ export const products: Product[] = [
       {
         name: "Chamoy",
         image: "/images/products/catrina_michelada_chamoy.png",
-        color: "#C10001",
+        color: "#fc0722",
       },
       {
         name: "Mango",
@@ -47,12 +47,12 @@ export const products: Product[] = [
       {
         name: "Limón",
         image: "/images/products/catrina_palomita_limon.png",
-        color: "#B91C1C"
+        color: "#6c7421"
       },
       {
         name: "Fresa",
         image: "/images/products/catrina_palomita_fresa.png",
-        color: "#DC2626",
+        color: "#aa4451",
       },
       {
         name: "Piña Colada",
@@ -62,12 +62,12 @@ export const products: Product[] = [
       {
         name: "Pepino",
         image: "/images/products/catrina_palomita_pepino.png",
-        color: "#E11D48",
+        color: "#1A631C",
       },
       {
         name: "Mora Azul",
         image: "/images/products/catrina_palomita_pepino.png",
-        color: "#E11D48",
+        color: "#1A631C",
       },]
   },
 ];
