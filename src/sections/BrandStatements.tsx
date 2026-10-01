@@ -1,8 +1,8 @@
-import LaCatrinaCup from '@/components/experience/LaCatrinaCup';
-import { OrbitControls } from '@react-three/drei';
-import { Canvas } from '@react-three/fiber';
-import { motion } from 'framer-motion';
-import type { Variants } from 'framer-motion';
+import LaCatrinaCup from "@/components/experience/LaCatrinaCup";
+import { Environment, OrbitControls } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+import { motion } from "framer-motion";
+import type { Variants } from "framer-motion";
 
 const imageVariants: Variants = {
   hidden: {
@@ -40,7 +40,7 @@ const itemVariants: Variants = {
     x: 0,
     transition: {
       duration: 0.7,
-      ease: 'easeOut',
+      ease: "easeOut",
     },
   },
 };
@@ -57,7 +57,7 @@ const flavorVariants: Variants = {
     scale: 1,
     transition: {
       duration: 0.4,
-      ease: 'easeOut',
+      ease: "easeOut",
     },
   },
 };
@@ -83,13 +83,26 @@ export default function BrandStatements() {
               fov: 45,
               near: 0.1,
               far: 200,
-              position: [-4, 3, 6],
+              position: [-1, 2, 6],
             }}
             className="min-h-150"
           >
             <ambientLight intensity={1} />
+
+            <directionalLight 
+              position={[3, 4, 5]}
+              intensity={1.2}
+            />
+
+            <Environment preset="studio" environmentIntensity={0.8} />
+
             <LaCatrinaCup />
-            <OrbitControls />
+
+            <OrbitControls
+              target={[0, 2, 0]}
+              minPolarAngle={Math.PI / 8}
+              maxPolarAngle={Math.PI / 2}
+            />
           </Canvas>
         </motion.div>
 
@@ -128,7 +141,7 @@ export default function BrandStatements() {
             variants={flavorVariants}
             className="mt-8 flex flex-wrap gap-3"
           >
-            {['Original', 'Chamoy', 'Mango', 'Sandía'].map((flavor) => (
+            {["Original", "Chamoy", "Mango", "Sandía"].map((flavor) => (
               <motion.span
                 key={flavor}
                 variants={flavorVariants}
