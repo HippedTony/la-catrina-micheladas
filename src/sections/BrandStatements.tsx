@@ -1,5 +1,8 @@
-import { motion } from "framer-motion";
-import type { Variants } from "framer-motion";
+import LaCatrinaCup from '@/components/experience/LaCatrinaCup';
+import { OrbitControls } from '@react-three/drei';
+import { Canvas } from '@react-three/fiber';
+import { motion } from 'framer-motion';
+import type { Variants } from 'framer-motion';
 
 const imageVariants: Variants = {
   hidden: {
@@ -37,7 +40,7 @@ const itemVariants: Variants = {
     x: 0,
     transition: {
       duration: 0.7,
-      ease: "easeOut",
+      ease: 'easeOut',
     },
   },
 };
@@ -54,7 +57,7 @@ const flavorVariants: Variants = {
     scale: 1,
     transition: {
       duration: 0.4,
-      ease: "easeOut",
+      ease: 'easeOut',
     },
   },
 };
@@ -70,11 +73,24 @@ export default function BrandStatements() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
         >
-          <img
+          {/* <img
             src="/images/products/catrina_michelada_original.png"
             alt="Michelada La Catrina"
             className="max-h-150"
-          />
+          /> */}
+          <Canvas
+            camera={{
+              fov: 45,
+              near: 0.1,
+              far: 200,
+              position: [-4, 3, 6],
+            }}
+            className="min-h-150"
+          >
+            <ambientLight intensity={1} />
+            <LaCatrinaCup />
+            <OrbitControls />
+          </Canvas>
         </motion.div>
 
         {/** Content */}
@@ -112,7 +128,7 @@ export default function BrandStatements() {
             variants={flavorVariants}
             className="mt-8 flex flex-wrap gap-3"
           >
-            {["Original", "Chamoy", "Mango", "Sandía"].map((flavor) => (
+            {['Original', 'Chamoy', 'Mango', 'Sandía'].map((flavor) => (
               <motion.span
                 key={flavor}
                 variants={flavorVariants}
