@@ -1,12 +1,19 @@
-import { useGLTF } from '@react-three/drei';
 import { useRef } from 'react';
+import { Center, useGLTF } from '@react-three/drei';
+
 import type { Group } from 'three';
 
-const MODEL_PATH = '/src/assets/models/la_catrina_cup.glb';
+const MODEL_PATH = '/src/assets/models/la-catrina-cup2.glb';
 
 export default function LaCatrinaCup() {
   const group = useRef<Group>(null);
   const { scene } = useGLTF(MODEL_PATH);
 
-  return <primitive ref={group} object={scene} />;
+  return (
+    <group ref={group}>
+      <Center>
+        <primitive object={scene} />
+      </Center>
+    </group>
+  )
 }

@@ -83,7 +83,7 @@ export default function BrandStatements() {
               fov: 45,
               near: 0.1,
               far: 200,
-              position: [-1, 2, 6],
+              position: [-1, 2, 5],
             }}
             className="min-h-150"
           >
@@ -94,12 +94,11 @@ export default function BrandStatements() {
               intensity={1.2}
             />
 
-            <Environment preset="studio" environmentIntensity={0.8} />
+            <Environment preset="studio" environmentIntensity={0.3} />
 
             <LaCatrinaCup />
 
             <OrbitControls
-              target={[0, 2, 0]}
               minPolarAngle={Math.PI / 8}
               maxPolarAngle={Math.PI / 2}
             />
