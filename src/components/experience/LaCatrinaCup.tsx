@@ -3,7 +3,7 @@ import { Center, useGLTF } from '@react-three/drei';
 
 import type { Group } from 'three';
 
-const MODEL_PATH = '/src/assets/models/la-catrina-cup2.glb';
+const MODEL_PATH = '/models/la-catrina-cup2.glb';
 
 export default function LaCatrinaCup() {
   const group = useRef<Group>(null);
