@@ -84,7 +84,7 @@ export default function ProductShowcase({
         whileInView="visible"
         viewport={{ once: true, amount: 0.25 }}
         variants={imageVariants}
-        className={`flex justify-center overflow-hidden ${
+        className={`h-110 flex justify-center overflow-hidden lg:h-auto ${
           reversed ? "lg:order-2" : "lg:order-1"
         }`}
       >

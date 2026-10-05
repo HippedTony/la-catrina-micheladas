@@ -40,7 +40,7 @@ export default function ProductCarousel({
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 1.1 }}
             transition={{ duration: 0.5 }}
-            className="absolute h-72 w-72 rounded-full blur-3xl"
+            className="absolute w-52 h-72 rounded-full blur-xl lg:blur-3xl lg:w-72"
             style={{
               backgroundColor: `${activeFlavor.color}95`,
             }}
