@@ -17,7 +17,3 @@
   --color-text: #003f72;
   --color-text-light: #ffffff;
 }
-
-canvas {
-  min-height: 600px;
-}

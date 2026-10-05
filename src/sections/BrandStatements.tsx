@@ -1,6 +1,4 @@
 import LaCatrinaCup from "@/components/experience/LaCatrinaCup";
-import { ContactShadows, Environment, OrbitControls } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
 import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
 
@@ -66,54 +64,15 @@ export default function BrandStatements() {
   return (
     <section id="nosotros" className="bg-brand text-white">
       <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-24 lg:grid-cols-2 lg:px">
-        {/** Image */}
+        {/** Model */}
         <motion.div
           variants={imageVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
+          className="mx-auto aspect-4/5 w-full max-w-140"
         >
-          {/* <img
-            src="/images/products/catrina_michelada_original.png"
-            alt="Michelada La Catrina"
-            className="max-h-150"
-          /> */}
-          <Canvas
-            camera={{
-              fov: 45,
-              near: 0.1,
-              far: 200,
-              position: [-1, 2, 5],
-            }}
-            className="min-h-150"
-          >
-            <ambientLight intensity={0.2} />
-
-            <directionalLight 
-              position={[4, 6, 5]}
-              intensity={1}
-            />
-
-            <Environment
-              preset="studio"
-              environmentIntensity={0.5}
-            />
-
-            <ContactShadows
-              position={[0, -2.5, 0]}
-              opacity={0.35}
-              scale={8}
-              blur={2.5}
-            />
-
-            <LaCatrinaCup />
-
-            <OrbitControls
-              minPolarAngle={Math.PI / 8}
-              maxPolarAngle={Math.PI / 2}
-              enableZoom={false}
-            />
-          </Canvas>
+          <LaCatrinaCup />
         </motion.div>
 
         {/** Content */}
