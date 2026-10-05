@@ -1,5 +1,5 @@
 import LaCatrinaCup from "@/components/experience/LaCatrinaCup";
-import { Environment, OrbitControls } from "@react-three/drei";
+import { ContactShadows, Environment, OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { motion } from "framer-motion";
 import type { Variants } from "framer-motion";
@@ -87,20 +87,31 @@ export default function BrandStatements() {
             }}
             className="min-h-150"
           >
-            <ambientLight intensity={1} />
+            <ambientLight intensity={0.2} />
 
             <directionalLight 
-              position={[3, 4, 5]}
-              intensity={1.2}
+              position={[4, 6, 5]}
+              intensity={1}
             />
 
-            <Environment preset="studio" environmentIntensity={0.3} />
+            <Environment
+              preset="studio"
+              environmentIntensity={0.5}
+            />
+
+            <ContactShadows
+              position={[0, -2.5, 0]}
+              opacity={0.35}
+              scale={8}
+              blur={2.5}
+            />
 
             <LaCatrinaCup />
 
             <OrbitControls
               minPolarAngle={Math.PI / 8}
               maxPolarAngle={Math.PI / 2}
+              enableZoom={false}
             />
           </Canvas>
         </motion.div>
