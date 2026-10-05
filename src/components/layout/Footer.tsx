@@ -121,9 +121,9 @@ export default function Footer() {
             </h3>
 
             <nav className="mt-5 flex flex-col gap-3">
-              {socialLinks.map((link) => (
+              {socialLinks.map((link, index) => (
                 <a
-                  key={link.href}
+                  key={index}
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"

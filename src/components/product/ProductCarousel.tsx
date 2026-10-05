@@ -31,7 +31,7 @@ export default function ProductCarousel({
 
   return (
     <div className="relative flex w-full justify-center">
-      <div className="relative flex aspect-square w-full max-w-xl items-center justify-center">
+      <div className="relative flex aspect-square w-full max-w-xl items-center justify-center overflow-x-clip">
         {/** Favor glow */}
         <AnimatePresence mode="wait">
           <motion.div

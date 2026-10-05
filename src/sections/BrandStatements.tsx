@@ -62,7 +62,7 @@ const flavorVariants: Variants = {
 
 export default function BrandStatements() {
   return (
-    <section id="nosotros" className="bg-brand text-white">
+    <section id="nosotros" className="bg-brand text-white overflow-x-clip">
       <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 py-24 lg:grid-cols-2 lg:px">
         {/** Model */}
         <motion.div

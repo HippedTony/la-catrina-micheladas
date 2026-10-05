@@ -77,7 +77,7 @@ export default function ProductShowcase({
   const selectedFlavor = product.flavors[activeFlavor];
 
   return (
-    <article className="grid items-center gap-12 py-20 lg:grid-cols-2">
+    <article className="grid items-center gap-12 py-20 lg:grid-cols-2 overflow-x-clip">
       {/** Image */}
       <motion.div
         initial="hidden"
