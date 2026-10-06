@@ -56,7 +56,7 @@ export default function Products() {
 
           <motion.h2
             variants={itemVariants}
-            className="mt-4 text-4xl font-black text-brand md:text-5xl"
+            className="mt-4 text-3xl font-black text-brand md:text-5xl"
           >
             Sabores para cada ocasión.
           </motion.h2>

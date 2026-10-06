@@ -91,7 +91,7 @@ export default function BrandStatements() {
 
           <motion.h2
             variants={itemVariants}
-            className="mt-4 font-raleway text-4xl font-black leading-tight md:text-5xl"
+            className="mt-4 font-raleway text-3xl font-black leading-tight md:text-5xl"
           >
             Una michelada.
             <br />

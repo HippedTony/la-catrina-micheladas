@@ -72,7 +72,7 @@ export default function Hero() {
             >
               <a
                 href="#productos"
-                className="mt-8 inline-flex items-center rounded-full bg-brand px-7 py-3.5 text-sm font-bold uppercase tracking-wide text-white transition-colors duration-300 hover:bg-accent"
+                className="mt-8 inline-flex items-center text-center rounded-full bg-brand px-7 py-3.5 text-sm font-bold uppercase tracking-wide text-white transition-colors duration-300 hover:bg-accent"
               >
                 Conoce nuestros productos
               </a>

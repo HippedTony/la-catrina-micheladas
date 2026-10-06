@@ -98,7 +98,7 @@ export default function Navbar() {
             LA CATRINA
           </a>
 
-          {/** Desktop nabigation */}
+          {/** Desktop navigation */}
           <motion.div
             variants={containerVariants}
             initial="hidden"

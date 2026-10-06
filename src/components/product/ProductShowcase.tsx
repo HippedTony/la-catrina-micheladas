@@ -77,14 +77,14 @@ export default function ProductShowcase({
   const selectedFlavor = product.flavors[activeFlavor];
 
   return (
-    <article className="grid items-center gap-12 py-20 lg:grid-cols-2 overflow-x-clip">
+    <article className="grid items-center gap-12 pb-10 lg:grid-cols-2 overflow-x-clip">
       {/** Image */}
       <motion.div
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.25 }}
         variants={imageVariants}
-        className={`h-110 flex justify-center overflow-hidden lg:h-auto ${
+        className={`h-110 flex justify-center overflow-hidden order-2 lg:h-auto ${
           reversed ? "lg:order-2" : "lg:order-1"
         }`}
       >
@@ -115,7 +115,7 @@ export default function ProductShowcase({
 
         <motion.h3
           variants={contentVariants}
-          className="mt-4 text-4xl font-black text-brand md:text-5xl"
+          className="mt-4 text-3xl font-black text-brand md:text-5xl"
         >
           {product.name}
         </motion.h3>

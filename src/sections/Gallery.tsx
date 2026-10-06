@@ -73,7 +73,7 @@ export default function Gallery() {
 
           <motion.h2
             variants={itemVariants}
-            className="mt-4 text-4xl font-black leading-tight text-brand md:text-5xl lg:text-6xl"
+            className="mt-4 text-3xl font-black leading-tight text-brand md:text-5xl lg:text-6xl"
           >
             El sabor se disfruta mejor juntos
           </motion.h2>

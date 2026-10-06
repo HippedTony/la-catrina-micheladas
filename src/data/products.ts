@@ -64,10 +64,11 @@ export const products: Product[] = [
         image: "/images/products/catrina_palomita_pepino.png",
         color: "#1A631C",
       },
-      {
-        name: "Mora Azul",
-        image: "/images/products/catrina_palomita_pepino.png",
-        color: "#1A631C",
-      },]
+      // {
+      //   name: "Mora Azul",
+      //   image: "/images/products/catrina_palomita_pepino.png",
+      //   color: "#1A631C",
+      // },
+    ]
   },
 ];

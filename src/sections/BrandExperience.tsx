@@ -87,7 +87,7 @@ export default function BrandExperience() {
 
           <motion.h2
             variants={itemVariants}
-            className="mt-5 text-4xl font-black leading-tight text-brand md:text-5xl lg:text-6xl"
+            className="mt-5 text-3xl font-black leading-tight text-brand md:text-5xl lg:text-6xl"
           >
             Sabores deliciosos hechos para cada momento.
           </motion.h2>

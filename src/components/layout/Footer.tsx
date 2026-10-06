@@ -54,7 +54,7 @@ export default function Footer() {
             La Catrina
           </span>
 
-          <h2 className="mt-5 text-4xl font-black leading-tight md:text-5xl lg:text-6xl">
+          <h2 className="mt-5 text-3xl font-black leading-tight md:text-5xl lg:text-6xl">
             Más que un vaso,
             <br />
             una experiencia
@@ -68,7 +68,7 @@ export default function Footer() {
           <motion.a
             variants={itemVariants}
             href="#productos"
-            className="mt-8 inline-flex rounded-full bg-white px-7 py-3.5 text-sm font-bold uppercase tracking-wide text-brand transition-colors duration-300 hover:bg-accent hover:text-white"
+            className="mt-8 inline-flex text-center rounded-full bg-white px-7 py-3.5 text-sm font-bold uppercase tracking-wide text-brand transition-colors duration-300 hover:bg-accent hover:text-white"
           >
             Conoce nuestros productos
           </motion.a>
@@ -139,7 +139,7 @@ export default function Footer() {
 
       {/** Button */}
       <div className="border-t border-white/15">
-        <div className="mx-auto flex max-w-7xl flex-col gap-3 px-6 py-6 text-white/50 sm:flex-row sm:items-center sm:justify-between lg:px-8">
+        <div className="mx-auto flex flex-row items-center justify-between max-w-7xl gap-3 px-6 py-6 text-white/50 lg:px-8">
           <span>© {new Date().getFullYear()} La Catrina.</span>
 
           <span>Hecho en México.</span>

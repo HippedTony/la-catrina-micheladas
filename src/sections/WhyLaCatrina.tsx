@@ -86,7 +86,7 @@ export default function WhyLaCatrina() {
 
           <motion.h2
             variants={itemVariants}
-            className="mt-4 text-4xl font-black leading-tight text-brand md:text-5xl lg:text-6xl"
+            className="mt-4 text-3xl font-black leading-tight text-brand md:text-5xl lg:text-6xl"
           >
             Más que un vaso,
             <br />
@@ -121,7 +121,7 @@ export default function WhyLaCatrina() {
                 {benefit.number}
               </motion.span>
 
-              <h3 className="mt-12 text-2xl font-black text-brand transition-colors duration-300 group-hover:text-white">
+              <h3 className="mt-2 text-2xl font-black text-brand transition-colors duration-300 group-hover:text-white lg:mt-12 ">
                 {benefit.title}
               </h3>
 
